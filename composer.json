@@ -1,0 +1,16 @@
+{
+    "name": "haifengfenfei/packagetest-for-laravel",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "haifengfenfei",
+            "email": "xxxx@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "haifengfenfei\\Packagetest\\": "src/"
+        }
+    }
+}
