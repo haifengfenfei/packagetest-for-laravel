@@ -1,6 +1,6 @@
 <?php
 
-namespace Haifengfenfei\Packagetest;
+namespace Haifengfenfei\Packagetest\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
