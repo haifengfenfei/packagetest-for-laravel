@@ -7,7 +7,13 @@ use Illuminate\Support\ServiceProvider;
 class PackagetestServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap services.
+     * 服务提供者加是否延迟加载.
+     *
+     * @var bool
+     */
+    protected $defer = true;
+    /**
+     * Bootstrap the application services.
      *
      * @return void
      */
