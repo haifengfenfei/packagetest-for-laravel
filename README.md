@@ -1,35 +1,40 @@
-### packagetest-for-laravel 发laravel扩展包
+# packagetest-for-laravel 发laravel扩展包
 
 =========================================================
 
 ```
 composer require haifengfenfei/packagetest-for-laravel 
 ```
-# 修改 config/app.php 
+## 修改 config/app.php 
  
-# 添加服务: providers 
+## 添加服务: providers 
 ```
 Haifengfenfei\Packagetest\PackagetestServiceProvider::class,
 ```
 
-# 配置别名：aliases 
+## 配置别名：aliases 
 ```
 'Packagetest' => Haifengfenfei\Packagetest\Facades\Packagetest::class,
 ```
-# 命令行执行加载指令 
+## 命令行执行加载指令 
 
 ```
 composer dump-autoload 
 ```
-# 发布资源文件
+## 发布资源文件
 ```
 php artisan vendor:publish --provider="Haifengfenfei\Packagetest\PackagetestServiceProvider"
 
 ```
 
-## 示例
+# 示例
 
-# 创建控制器
+## 添加路由
+```
+Route::get('/test','TestController@index');
+```
+
+## 创建控制器
 ```
 php artisan make:controller TestController 
 ```
