@@ -1,4 +1,4 @@
-# packagetest-for-laravel 发laravel扩展包
+# packagetest-for-laravel 开发laravel扩展包
 
 =========================================================
 
