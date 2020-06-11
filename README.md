@@ -7,12 +7,12 @@ composer require haifengfenfei/packagetest-for-laravel
 ```
 # 修改 config/app.php 
  
-# 添加服务 providers 
+# 添加服务: providers 
 ```
 Haifengfenfei\Packagetest\PackagetestServiceProvider::class,
 ```
 
-# aliases 配置别名： 
+# 配置别名：aliases 
 ```
 'Packagetest' => Haifengfenfei\Packagetest\Facades\Packagetest::class,
 ```
@@ -27,5 +27,29 @@ php artisan vendor:publish --provider="Haifengfenfei\Packagetest\PackagetestServ
 
 ```
 
+## 示例
+
+# 创建控制器
+```
+php artisan make:controller TestController 
+```
+
+=======================================================
+
+```
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Packagetest;
+
+class TestController extends Controller
+{
+    public function index(){
+
+    	$a = Packagetest::test_rtn('test');
+        return view('Packagetest::packagetest',['msg'=>$a]);
+    }
+}
+```
 
 
